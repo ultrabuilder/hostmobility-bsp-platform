@@ -5,7 +5,7 @@
   <remote fetch="http://git.openembedded.org" name="oe"/>
   <remote fetch="http://git.toradex.com" name="trdx"/>
   <remote fetch="http://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="git@github.com:" name="gith-ssh"/>
+  <remote fetch="ssh://git@github.com/" name="gith-ssh"/>
 
   <default sync-j="4"/>
 
