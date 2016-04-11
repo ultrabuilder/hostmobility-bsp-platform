@@ -10,8 +10,8 @@
   <remote fetch="http://git.toradex.com" name="trdx"/>
 
   <project remote="oe"    revision="88f013cee4cdec91acee59ffbc7bcea6dd2b8d2e" upstream="1.18"   name="bitbake"    path="stuff/openembedded-core/bitbake"/>
-  <project remote="oe"    revision="3549f5f203363302256848bb33c05c4fd4871948" upstream="dylan"  name="openembedded-core"  path="stuff/openembedded-core"/>
-  <project remote="oe"    revision="13ae5105ee30410136beeae66ec41ee4a8a2e2b0" upstream="dylan"  name="meta-openembedded"  path="stuff/meta-openembedded"/>
+  <project remote="oe"    revision="f07a4e0d80f5e0dd94514f6aae11a7bd56034f30" upstream="dylan"  name="openembedded-core"  path="stuff/openembedded-core"/>
+  <project remote="oe"    revision="4e3362f9c2b5540231011930b91d2cf56e487ff7" upstream="dylan"  name="meta-openembedded"  path="stuff/meta-openembedded"/>
   <project remote="gith"  revision="7543b99f99592d0c23a5e66007b8631751b9d79c" upstream="angstrom-v2013.06-yocto1.4"  name="Angstrom-distribution/meta-angstrom.git" path="stuff/meta-angstrom"/>
   <project remote="gith"  revision="2140f2a114f7009f86479afb12a524bb157cbb0e" upstream="dylan"  name="OSSystems/meta-browser.git" path="stuff/meta-browser"/>
   <project remote="linaro"  revision="6321a745aba4fc2ddb559d4606b0a98afc8a1ca2" upstream="dylan"  name="meta-linaro.git"  path="stuff/meta-linaro"/>
