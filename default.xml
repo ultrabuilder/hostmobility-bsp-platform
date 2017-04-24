@@ -16,7 +16,7 @@
   <project remote="gith"  revision="2140f2a114f7009f86479afb12a524bb157cbb0e" upstream="dylan"  name="OSSystems/meta-browser.git" path="stuff/meta-browser"/>
   <project remote="linaro"  revision="6321a745aba4fc2ddb559d4606b0a98afc8a1ca2" upstream="dylan"  name="meta-linaro.git"  path="stuff/meta-linaro"/>
   <project remote="trdx"  revision="f69ffe4cebf94f48f02838002dbc3544b3ffb460" upstream="dylan"  name="meta-lxde.git"  path="stuff/meta-lxde"/>
-  <project remote="gith"  revision="1f28b5dd41ac54410dfaf9a3dc5d9af64ab06037" upstream="master" name="hostmobility/meta-toradex.git" path="stuff/meta-toradex">
+  <project remote="gith"  revision="039aee5be085cd1a9de409abfe65e9fc0050b875" upstream="master" name="hostmobility/meta-toradex.git" path="stuff/meta-toradex">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 
