@@ -1,4 +1,4 @@
-# Host Mobility oe-core Setup
+# Host Mobility Yocto/OE-core Setup
 
 Fork of Toradex repo manifest (http://git.toradex.com/toradex-bsp-platform.git)
 
@@ -13,33 +13,22 @@ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/rep
 chmod a+x ~/bin/repo
 ```
 
-Create a directory for your oe-core setup to live in and clone the meta information.
+Create a directory for your `hostmobility-bsp-platform` setup to live in and clone the meta information.
 ```
-mkdir oe-core
-cd oe-core
+mkdir hostmobility-bsp-platform
+cd hostmobility-bsp-platform
 repo init -u git@github.com:hostmobility/hostmobility-bsp-platform.git -b master
 repo sync
 ```
 
-Optionally create a development branch in all git repositories
-
-  repo start mybranch --all
-
-Source the file export to setup the environment. On first invocation this also copies a sample
-configuration to build/conf/*.conf.
-
-  . export
-
-Adapt build/conf/local.conf to your needs. At least check the variables BB_NUMBER_THREADS,
-PARALLEL_MAKE, and MACHINE. Set MACHINE to a preferred value and when you need a different
-one override it from the command line.
-
-More information see Toradex developer website:
-
-  http://developer.toradex.com/software-resources/arm-family/linux/board-support-package/openembedded-(core)
-
-Inteded for internal use only:
+Setup build environment and start baking!
 ```
-# To generate a manifest from what is currently checked out:
-repo manifest -r -o manifest.xml
+TEMPLATECONF=${PWD}/layers/meta-hostmobility-distro/conf . layers/openembedded-core/oe-init-build-env build
+bitbake console-hostmobility-image
+
 ```
+
+You need to run the above command on each new session. If you all ready have an build directory it will be un-touched and only environment will be setup.
+
+You will find the build result in `hostmobility-bsp-platform/deploy` directory.
+
