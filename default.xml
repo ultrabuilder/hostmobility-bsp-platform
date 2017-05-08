@@ -1,28 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="http://github.com" name="gith"/>
-  <remote fetch="http://git.linaro.org/git-ro/openembedded" name="linaro"/>
-  <remote fetch="http://git.openembedded.org" name="oe"/>
-  <remote fetch="http://git.toradex.com" name="trdx"/>
-  <remote fetch="http://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="ssh://git@github.com/" name="gith-ssh"/>
+  <remote alias="repo" fetch="http://github.com/Angstrom-distribution" name="githa"/>
+  <remote alias="repo" fetch="http://github.com/Freescale" name="githf"/>
+  <remote alias="repo" fetch="http://github.com/OSSystems" name="githo"/>
+  <remote alias="repo" fetch="http://github.com/meta-qt5" name="githq"/>
+  <remote alias="repo" fetch="http://github.com/watatuki" name="githt"/>
+  <remote alias="repo" fetch="http://git.linaro.org/git-ro/openembedded" name="linaro"/>
+  <remote alias="repo" fetch="http://github.com/openembedded" name="oe"/>
+  <remote alias="repo" fetch="http://git.toradex.com" name="tdx"/>
+  <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote alias="repo" fetch="git://git@gitlab.com/hostmobility/" name="hm"/>
 
   <default sync-j="4"/>
-
-  <project name="Angstrom-distribution/meta-angstrom.git" path="stuff/meta-angstrom" remote="gith" revision="9466ed2bafe2fd66324aa79b5d6198bfc2354b98" upstream="angstrom-v2014.12-yocto1.7"/>
-  <project name="Freescale/meta-fsl-arm-extra.git" path="stuff/meta-fsl-arm-extra" remote="gith" revision="9700f14f3efcab8de9a1b60a3e164b8df39897af" upstream="dizzy"/>
-  <project name="Freescale/meta-fsl-arm.git" path="stuff/meta-fsl-arm" remote="gith" revision="db1571f40c375a398a8cdbb42de4c4f272ab0cd1" upstream="dizzy"/>
-  <project name="Freescale/meta-fsl-demos.git" path="stuff/meta-fsl-demos" remote="gith" revision="b9103df7dfdfdf2c4b066e5d2228f168e0c25e46" upstream="dizzy"/>
-  <project name="OSSystems/meta-browser.git" path="stuff/meta-browser" remote="gith" revision="2bca1fd58e8dc827469627e17e9f0d8e711fcc5f" upstream="master"/>
-  <project name="bitbake" path="stuff/openembedded-core/bitbake" remote="oe" revision="fbf1c39641f78d553961974a2bb96256eb9496e7" upstream="1.24"/>
-  <project name="meta-linaro.git" path="stuff/meta-linaro" remote="linaro" revision="59655ebd6e10d9f66664db4c2d63c7fac606779d" upstream="dizzy"/>
-  <project name="meta-lxde.git" path="stuff/meta-lxde" remote="trdx" revision="2bc2d0940b54858d71ea2c1b6aa6b27bc9bab506" upstream="dizzy"/>
-  <project name="meta-openembedded" path="stuff/meta-openembedded" remote="oe" revision="5b6f39ce325d490fc382d5d59c5b8b9d5fa38b38" upstream="dizzy"/>
-  <project name="meta-toradex.git" path="stuff/meta-toradex" remote="trdx" revision="a76e317a2ae638ed62ccf88636aa79d0ae368d78" upstream="V2.4"/>
-  <project name="hostmobility/meta-hm.git" path="stuff/meta-hm" remote="gith-ssh" revision="master" upstream="master">
-  <copyfile dest="export" src="buildconf/export"/>
-  </project>
-  <project name="openembedded-core" path="stuff/openembedded-core" remote="oe" revision="96270e79a70960289856cf424c9e4c1894acb18c" upstream="dizzy"/>
-  <project name="woglinde/meta-java.git" path="stuff/meta-java" remote="gith" revision="d2b75b615e4612f9fa05950c1d76d4a719e573d4" upstream="master"/>
-  <project name="bmwcarit/meta-ros.git" path="stuff/meta-ros" remote="gith" revision="1d7e90b068f7bcd0eab9844443c1f06236556e6c" upstream="master"/>
+  <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="bdf7a362ecdafd47f309b7a21feac4b94624f287" upstream="1.32"/>
+  <project name="meta-angstrom.git" path="layers/meta-angstrom" remote="githa" revision="4f27481ab24ae0fab737771d066b8b33c9c9b3c7" upstream="angstrom-v2016.12-yocto2.2"/>
+  <project name="meta-browser.git" path="layers/meta-browser" remote="githo" revision="7d37ae2adec5cc5ea27367ce125bc7bce2310ca1" upstream="morty"/>
+  <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="a78b17c24e66567f272ad47f9d6300e6b1b90c29" upstream="morty"/>
+  <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="cd5c7a2539f40004f74126e9fdf08254fd9a6390" upstream="morty"/>
+  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="fc804d29ee85d58e9bb66f7319e749b53e192457" upstream="morty"/>
+  <project name="meta-jetson-tk1.git" path="layers/meta-jetson-tk1" remote="githt" revision="e8b87fe8da7c6fcffa37ab245f50082953cc1ee1" upstream="Morty"/>
+  <project name="meta-linaro.git" path="layers/meta-linaro" remote="linaro" revision="b6d0b81584c3395708b27ffe7b8fe248ef674839" upstream="morty"/>
+  <project name="meta-lxde.git" path="layers/meta-lxde" remote="tdx" revision="1bd36a4d0f7e1e9fdea9c4c991188bc1dc9da421" upstream="morty"/>
+  <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="fe5c83312de11e80b85680ef237f8acb04b4b26e" upstream="morty"/>
+  <project name="meta-qt4" path="layers/meta-qt4" remote="yocto" revision="2c7f8df9039be498f8a2232d1428adb7f4e5e800" upstream="morty"/>
+  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="3601fd2c5306ac6d5d0d536e0be8cbb90da9b4c1" upstream="morty"/>
+  <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="554adccf11f2ba2947ed221307ddd703c0889967" upstream="morty"/>
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="298a87246b9ea2480520d3f698aaaedbc490c8b8" upstream="morty"/>
+  <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="d351e11b76c004afbf0f37d5481266bafdb015ee" upstream="morty"/>
+  <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="tdx" revision="fecccd7ebf62b8da88569d229b5c7bb3938aaa76" upstream="morty"/>
+  <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="ddf907ca95a19f54785079b4396935273b3747f6" upstream="morty"/>
+  <project name="meta-hostmobility-bsp.git" path="layers/meta-hostmobility-bsp" remote="hm"  upstream="master"/>
+  <project name="meta-hostmobility-distro.git" path="layers/meta-hostmobility-distro" remote="hm"  upstream="master"/>
 </manifest>
+
