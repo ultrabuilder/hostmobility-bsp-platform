@@ -5,7 +5,10 @@ Fork of Toradex repo manifest (http://git.toradex.com/toradex-bsp-platform.git)
 To simplify installation we provide a repo manifest which manages the different git repositories
 and the used versions. (more on repo: http://code.google.com/p/git-repo/ )
 
+Before proceeding take a look at [Yocto Manual - Build Host Packages](http://www.yoctoproject.org/docs/2.3/mega-manual/mega-manual.html#packages).
+
 Install the repo bootstrap binary:
+
 ```
 mkdir ~/bin
 PATH=~/bin:$PATH
