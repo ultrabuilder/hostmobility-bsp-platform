@@ -9,7 +9,7 @@
   <remote alias="repo" fetch="http://github.com/openembedded" name="oe"/>
   <remote alias="repo" fetch="http://git.toradex.com" name="tdx"/>
   <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto"/>
-  <remote alias="repo" fetch="git://git@gitlab.com/hostmobility/" name="hm"/>
+  <remote alias="repo" fetch="http://github.com/hostmobility/" name="hm"/>
 
   <default sync-j="4"/>
   <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" upstream="1.32"/>
