@@ -1,6 +1,6 @@
 # Host Mobility Yocto/OE-core Setup
 
-Fork of Toradex repo manifest (http://git.toradex.com/toradex-bsp-platform.git)
+Fork of Toradex repo manifest (http://git.toradex.com/cgit/toradex-bsp-platform.git/)
 
 To simplify installation we provide a repo manifest which manages the different git repositories
 and the used versions. (more on repo: http://code.google.com/p/git-repo/ )
