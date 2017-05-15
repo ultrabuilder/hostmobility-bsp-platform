@@ -30,6 +30,6 @@
   <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="tdx" revision="fecccd7ebf62b8da88569d229b5c7bb3938aaa76" upstream="morty"/>
   <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="ddf907ca95a19f54785079b4396935273b3747f6" upstream="morty"/>
   <project name="meta-hostmobility-bsp.git" path="layers/meta-hostmobility-bsp" remote="hm" revision="82ebbd5d53d7eb6fc701824b680987f46d34cf3a"  upstream="master"/>
-  <project name="meta-hostmobility-distro.git" path="layers/meta-hostmobility-distro" remote="hm" revision="4ac89a902c57958bd480fc757df9b79c69c1609a" upstream="master"/>
+  <project name="meta-hostmobility-distro.git" path="layers/meta-hostmobility-distro" remote="hm" revision="cb4dbb5a8d1e2be0b3d50dff3f9f1af92c13f5a9" upstream="master"/>
 </manifest>
 
