@@ -10,6 +10,7 @@
   <remote alias="repo" fetch="http://git.toradex.com" name="tdx"/>
   <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote alias="repo" fetch="http://github.com/hostmobility/" name="hm"/>
+  <remote alias="repo" fetch="ssh://git@github.com/hostmobility/" name="hmssh"/>
 
   <default sync-j="4"/>
   <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="bdf7a362ecdafd47f309b7a21feac4b94624f287" upstream="1.32"/>
@@ -31,6 +32,6 @@
   <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="ddf907ca95a19f54785079b4396935273b3747f6" upstream="morty"/>
   <project name="meta-hostmobility-bsp.git" path="layers/meta-hostmobility-bsp" remote="hm" revision="master"/>
   <project name="meta-hostmobility-distro.git" path="layers/meta-hostmobility-distro" remote="hm" revision="master"/>
-  <project name="mx4.git" path="mx4-update" remote="hm" revision="mx4-2.0"/>
+  <project name="mx4.git" path="mx4-update" remote="hmssh" revision="mx4-2.0"/>
 </manifest>
 
