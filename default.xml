@@ -12,6 +12,7 @@
   <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote alias="repo" fetch="http://github.com/hostmobility/" name="hm"/>
   <remote alias="repo" fetch="ssh://git@github.com/hostmobility/" name="hmssh"/>
+  <remote alias="repo" fetch="https://git.yoctoproject.org/git/meta-virtualization" name="yoctodocker"/>
 
   <default sync-j="4"/>
   <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="223a0f68530571d2280f526bddbc718fa803a3dc" upstream="1.36"/>
@@ -35,5 +36,6 @@
   <project name="meta-hostmobility-bsp.git" path="layers/meta-hostmobility-bsp" remote="hm" revision="master"/>
   <project name="meta-hostmobility-distro.git" path="layers/meta-hostmobility-distro" remote="hm" revision="master"/>
   <project name="mx4.git" path="mx4-update" remote="hmssh" revision="mx4-2.0"/>
+  <project name="meta-virtualization.git" path="layers/meta-virtualization" remote="yoctodocker" revision="b704c689b67639214b9568a3d62e82df27e9434f"/>
 </manifest>
 
