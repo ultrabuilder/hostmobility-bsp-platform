@@ -34,7 +34,7 @@
   <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="dd9e2dedb9ab41f509bae26f12704cbee1eb765d" upstream="rocko"/>
   <project name="meta-hostmobility-bsp.git" path="layers/meta-hostmobility-bsp" remote="hm" revision="master"/>
   <project name="meta-hostmobility-distro.git" path="layers/meta-hostmobility-distro" remote="hm" revision="master"/>
-  <project name="mx4.git" path="mx4-update" remote="hmssh" revision="mx4-2.0"/>
+  <project name="mx4-deploy.git" path="mx4-deploy" remote="hmssh" revision="master"/>
   <project name="meta-virtualization.git" path="layers/meta-virtualization" remote="yocto" revision="b704c689b67639214b9568a3d62e82df27e9434f"/>
 </manifest>
 
