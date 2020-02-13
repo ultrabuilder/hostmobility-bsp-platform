@@ -28,6 +28,8 @@ Setup build environment.
 ```
 $ export TEMPLATECONF=${PWD}/layers/meta-hostmobility-distro/conf
 $ . layers/openembedded-core/oe-init-build-env build
+or
+Follow the instructions in mx4-deploy to make a ".img" file
 ```
 **NOTE!** You need to run the above command on each new session. If you all ready have an build directory it will be un-touched and only environment will be setup.
 
