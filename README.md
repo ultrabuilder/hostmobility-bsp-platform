@@ -1,3 +1,4 @@
+###This manifest file is used by mx4-t30-fr-bsp-v1.5.x###
 # Host Mobility oe-core Setup
 
 Fork of Toradex repo manifest (http://git.toradex.com/toradex-bsp-platform.git)
