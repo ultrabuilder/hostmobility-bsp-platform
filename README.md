@@ -10,6 +10,8 @@ Before proceeding take a look at [Yocto Manual - Build Host Packages](http://www
 Install the repo bootstrap binary:
 
 ```
+sudo apt-get install repo
+or
 mkdir ~/bin
 PATH=~/bin:$PATH
 curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
