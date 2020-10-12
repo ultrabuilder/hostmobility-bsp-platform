@@ -33,7 +33,7 @@
   <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="tdx" revision="4793c6737d73134a2e73da466e823ca65f53f969" upstream="rocko"/>
   <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="tdx" revision="d7b2e3daf86a632ab92bb43eaa697a4c6b70ddae" upstream="rocko"/>
   <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="dd9e2dedb9ab41f509bae26f12704cbee1eb765d" upstream="rocko"/>
-  <project name="meta-hostmobility-bsp.git" path="layers/meta-hostmobility-bsp" remote="hm" revision="master"/>
+  <project name="meta-hostmobility-bsp.git" path="layers/meta-hostmobility-bsp" remote="hm" revision="ea9dfaeb533726a1380822247f57be8fdad7d4ba"/>
   <project name="meta-hostmobility-distro.git" path="layers/meta-hostmobility-distro" remote="ub" revision="master"/>
   <project name="mx4-deploy.git" path="mx4-deploy" remote="hmssh" revision="master"/>
   <project name="meta-virtualization.git" path="layers/meta-virtualization" remote="yocto" revision="b704c689b67639214b9568a3d62e82df27e9434f"/>
