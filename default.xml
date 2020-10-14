@@ -11,7 +11,7 @@
   <remote alias="repo" fetch="http://git.toradex.com" name="tdx"/>
   <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote alias="repo" fetch="http://github.com/hostmobility/" name="hm"/>
-  <remote alias="repo" fetch="http://github.com/ultrabuilder/" name="ub"/>
+  <remote alias="repo" fetch="ssh://git@github.com/ultrabuilder/" name="ub"/>
   <remote alias="repo" fetch="ssh://git@github.com/hostmobility/" name="hmssh"/>
 
   <default sync-j="4"/>
