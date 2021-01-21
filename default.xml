@@ -3,7 +3,6 @@
   <remote alias="repo" fetch="http://github.com/Angstrom-distribution" name="githa"/>
   <remote alias="repo" fetch="http://github.com/Freescale" name="githf"/>
   <remote alias="repo" fetch="http://github.com/OSSystems" name="githo"/>
-  <remote alias="repo" fetch="http://github.com/meta-qt5" name="githq"/>
   <remote alias="repo" fetch="http://github.com/morphis" name="giths"/>
   <remote alias="repo" fetch="http://github.com/watatuki" name="githt"/>
   <remote alias="repo" fetch="http://git.linaro.org/git-ro/openembedded" name="linaro"/>
@@ -22,11 +21,8 @@
   <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="e71ace9ede9b58f2ed3381a53fdc814f8e963c60" upstream="rocko"/>
   <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="51756d1c2058139c8a21f89b86cfd8007b71b7f0" upstream="rocko"/>
   <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="61ab34ac6d664a229847b796ec20fd9f7c8ecbf4" upstream="rocko"/>
-  <project name="meta-jetson-tk1.git" path="layers/meta-jetson-tk1" remote="githt" revision="b430756e711b6b29381c8467185f475f5a505f96" upstream="rocko"/>
   <project name="meta-lxde.git" path="layers/meta-lxde" remote="tdx" revision="dbcbbfd9539a9a017bb6c9b7fd67c3ca22c4cacf" upstream="rocko"/>
   <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="eae996301d9c097bcbeb8046f08041dc82bb62f8" upstream="rocko"/>
-  <project name="meta-qt4" path="layers/meta-qt4" remote="yocto" revision="e290738759ef3f39c9e079eaa9b606a62107e5ba" upstream="rocko"/>
-  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="682ad61c071a9710e9f9d8a32ab1b5f3c14953d1" upstream="rocko"/>
   <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="tdx" revision="4f10295f39d3b2216fdc9d69967a34e3d7b48b2c" upstream="rocko"/>
   <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="4dd2f81c4f0337f8e4b0fc915ad94feba514789e" upstream="rocko">
     <copyfile dest="export" src="buildconf/export"/>
