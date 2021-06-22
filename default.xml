@@ -12,8 +12,6 @@
   <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote alias="repo" fetch="http://github.com/hostmobility/" name="hm"/>
   <remote alias="repo" fetch="http://github.com/ultrabuilder/" name="ub"/>
-  <remote alias="repo" fetch="ssh://git@github.com/ultrabuilder/" name="ubssh"/>
-  <remote alias="repo" fetch="ssh://git@github.com/hostmobility/" name="hmssh"/>
 
   <default sync-j="4"/>
   <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="223a0f68530571d2280f526bddbc718fa803a3dc" upstream="1.36"/>
@@ -35,8 +33,8 @@
   <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="tdx" revision="d7b2e3daf86a632ab92bb43eaa697a4c6b70ddae" upstream="rocko"/>
   <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="dd9e2dedb9ab41f509bae26f12704cbee1eb765d" upstream="rocko"/>
   <project name="meta-hostmobility-bsp.git" path="layers/meta-hostmobility-bsp" remote="ub" revision="platform_2.0_dev"/>
-  <project name="meta-hostmobility-distro.git" path="layers/meta-hostmobility-distro" remote="ubssh" revision="distro_2.0_ic_logger"/>
-  <project name="mx4-deploy.git" path="mx4-deploy" remote="hmssh" revision="master"/>
+  <project name="meta-hostmobility-distro.git" path="layers/meta-hostmobility-distro" remote="ub" revision="distro_2.0_ic_logger"/>
+  <project name="mx4-deploy.git" path="mx4-deploy" remote="hm" revision="master"/>
   <project name="meta-virtualization.git" path="layers/meta-virtualization" remote="yocto" revision="b704c689b67639214b9568a3d62e82df27e9434f"/>
 </manifest>
 
